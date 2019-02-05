@@ -17,6 +17,10 @@ I'll make and executable .exe file so that this can be run on any computer.
 right now it can be used by the people who has python, numpy, opencv pyautogui
 installed in their pc. Don't worry exe is coming soon.
 """
+"""
+This is the recognizer code, after creating dataset and training the model
+you can use this. Other associated files and codes will be uploaded soon
+"""
 
 import numpy as np  #numpy library as np
 import cv2       #openCv library
