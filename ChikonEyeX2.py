@@ -119,8 +119,8 @@ def data_Train():
         recog()
     """
 
-    #if user input is 1 2 or 3  
-    if id != '1' or id != '2' or id != '3' or id != '4' or id != '5':
+    #if user input is 1 2 or 3  max 5 here <you can change that.>
+    if id != '1' and id != '2' and id != '3' and id != '4' and id != '5':
         pyautogui.alert(text='WRONG INPUT',title='ChikonEye',button='Back')
         recog()
 
