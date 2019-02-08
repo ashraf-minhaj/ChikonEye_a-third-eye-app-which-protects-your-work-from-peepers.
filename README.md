@@ -1,3 +1,6 @@
+To do face recognition one has to run 3 different codes DataSet creato then Train the model then Recognizer code. I have written a single python script that will do all those 3 jobs by itself. SO you don't need to worry a bit. 
+
+Additional features like GUI and Auto Lock Screen have been added.
 # ChikonEye_a-third-eye-app-which-protects-your-work-from-peepers.
 A program that watches your back while working on your pc and locks the screen if it sees some1 unauthorized watching at your work- thus protects your valuable work or sometimes saves the personality.
 
