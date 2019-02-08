@@ -1,4 +1,4 @@
-To do face recognition one has to run 3 different codes DataSet creato then Train the model then Recognizer code. I have written a single python script that will do all those 3 jobs by itself. SO you don't need to worry a bit. 
+To do face recognition one has to run 3 different codes DataSet creator then Train the model then Recognizer code. I have written a single python script that will do all those 3 jobs by itself. SO you don't need to worry a bit. 
 
 Additional features like GUI and Auto Lock Screen have been added.
 # ChikonEye_a-third-eye-app-which-protects-your-work-from-peepers.
