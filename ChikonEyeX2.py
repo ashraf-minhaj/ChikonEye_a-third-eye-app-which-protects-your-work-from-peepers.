@@ -44,7 +44,6 @@ cap = cv2.VideoCapture(0)   # 0 = main camera , 1 = extra connected webcam and s
 rec = cv2.face.LBPHFaceRecognizer_create()
 
 #the path where the code is saved
-#pathz = "C:\\Users\\HP\\cv_practice\\chikon" #Change this
 pathz = os.path.dirname(os.path.abspath(__file__)) #get path of the software
 
 dir_path = f"{pathz}\\dataSet"
