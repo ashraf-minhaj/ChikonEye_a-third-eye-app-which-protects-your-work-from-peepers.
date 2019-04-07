@@ -12,6 +12,10 @@ mail me at- ashraf_minhaj@yahoo.com
 """
 """
 Version: 2.0 (all codes in one .py file).
+Update: 7th April 2019
+No need to input parent folder path. The code finds the parent path
+by itself.
+
 Contains: 1. Dataset Creator (take photo and create a dataset)
           2. Tariner    (training your model)
           3. Recognizer (the code that recognizes you)
@@ -23,11 +27,15 @@ right now it can be used by the people who has python, numpy, opencv pyautogui
 installed in their pc. Don't worry exe is coming soon.
 """
 
-import cv2
+#__ Press 'q' to quit or stop the program
+
+
+
+import cv2  
 import numpy as np
 import pyautogui
 from time import sleep
-from PIL import Image
+from PIL import Image  #pip install packages
 import os
 
 #location of opencv haarcascade <change according to your file location>
@@ -36,7 +44,19 @@ cap = cv2.VideoCapture(0)   # 0 = main camera , 1 = extra connected webcam and s
 rec = cv2.face.LBPHFaceRecognizer_create()
 
 #the path where the code is saved
-pathz = "C:\\Users\\HP\\cv_practice\\chikon" #Change this
+#pathz = "C:\\Users\\HP\\cv_practice\\chikon" #Change this
+pathz = os.path.dirname(os.path.abspath(__file__)) #get path of the software
+
+dir_path = f"{pathz}\\dataSet"
+
+
+#___make a path named dataSet
+try:
+    os.mkdir(dir_path)
+except OSError:
+    print("Folder exists or Error!")
+else:
+    print("created")
 
 
 #recogizer module
@@ -81,9 +101,11 @@ def recog():
                 sleep(0.500)       #a bit delay <needed!>
                 #windows lock code to command prompt and hit 'Enter'
                 pyautogui.typewrite("rundll32.exe user32.dll, LockWorkStation\n") 
-
+            
+            """
             elif id == 1:      #if authorized person (me & my Brother Siam)
                 print("Authorized Person\n") #do nothing
+            """
 
         
     
@@ -109,7 +131,7 @@ def data_Train():
     sampleNum = 0
     #print("Starting training")
     id = pyautogui.prompt(text="""
-    Enter User ID.\n\nnote: numeric data only.""", title='ChikonEye', default='none')
+    Enter User ID.\n\nnote: numeric data only 1 2 3 etc.""", title='ChikonEye', default='none')
     #check for user input
     
     """
@@ -119,16 +141,12 @@ def data_Train():
         recog()
     """
 
-    #if user input is 1 2 or 3  max 5 here <you can change that.>
-    if id != '1' and id != '2' and id != '3' and id != '4' and id != '5':
+    #if user input is 1 2 or 3  
+    if int(id) < 0:
         pyautogui.alert(text='WRONG INPUT',title='ChikonEye',button='Back')
-        recog()
 
-    else:
-        #let, the input is okay
+    if int(id) > 0:
         while True:
-            
-            
             ret, img = cap.read()  
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -155,7 +173,7 @@ def trainer():
     faces = []   #empty list for faces
     Ids = [] #empty list for IDs
 
-    path = (f'{pathz}\\dataSet')
+    path = dir_path
 
     #gets image id with path
     def getImageWithID(path):
