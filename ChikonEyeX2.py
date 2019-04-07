@@ -23,8 +23,8 @@ Contains: 1. Dataset Creator (take photo and create a dataset)
 """
 """
 I'll make and executable .exe file so that this can be run on any computer.
-right now it can be used by the people who has python, numpy, opencv pyautogui
-installed in their pc. Don't worry exe is coming soon.
+right now it can be used by the people who has python, numpy, opencv, pyautogui
+and pillow installed in their pc. Don't worry exe is coming soon.
 """
 
 #__ Press 'q' to quit or stop the program
