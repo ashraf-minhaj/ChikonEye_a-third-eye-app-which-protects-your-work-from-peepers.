@@ -144,7 +144,7 @@ def data_Train():
     if int(id) < 0:
         pyautogui.alert(text='WRONG INPUT',title='ChikonEye',button='Back')
 
-    if int(id) > 0:
+    elif int(id) > 0:
         while True:
             ret, img = cap.read()  
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
