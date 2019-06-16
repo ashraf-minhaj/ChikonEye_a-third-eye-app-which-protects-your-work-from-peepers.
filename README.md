@@ -32,5 +32,5 @@ ChikonEye literally watches your back.
 preventing others who peeps your computer from seeing your valuable secret works.
 Now your works are safe and secure.
 
-
+delete the user.x.x image before using
 # Press 'q' to quit or stop the program
