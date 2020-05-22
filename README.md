@@ -1,11 +1,23 @@
-Update:
-I am working on Version-3 of this software to make it a complete software using Pyqt5. 
+# ChikonEye_a-third-eye-app-which-protects-your-work-from-peepers.
+Update (22nd May 2020):
 
+#Version 2.0.1 - Additional features added:
+1. Executable file 
+2. Video recording
+3. Face detection, recognition, model training
+4. Password to exit
+5. Modern and easy to use UI
+(Tested on windows-10 based computers)
+
+Version 2.01 is ready- to donwload Executable file and run on computer visit this link: https://drive.google.com/open?id=1ZrYlaNin1bgex-G3Fpwh6Hr4t-uPkvvl
+Please keep all the 3 files (1)ChikonEye2.exe (2)Icons (3)haarcascade_frontalface_alt2.xml on same directory. The executable file needs these two (2 and 3) files to run successfully. The default password is 6251. You can change the password from settings>change password section.
+Video guide: (updating soon)
+
+
+#Older version documentation
 To do face recognition one has to run 3 different codes DataSet creator then Train the model then Recognizer code. I have written a single python script that will do all those 3 jobs by itself. SO you don't need to worry a bit. 
 
 Additional features like GUI and Auto Lock Screen have been added.
-# ChikonEye_a-third-eye-app-which-protects-your-work-from-peepers.
-
 Version: 2.0 (all codes in one .py file).
 Update: 7th April 2019
 No need to input parent folder path. The code finds the parent path
