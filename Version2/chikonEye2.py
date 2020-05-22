@@ -35,6 +35,7 @@ ICON_DIR = f"{PARENT_PATH}\\Icon"    #Contains icons, comes with the app
 DATASET_DIR = "dataSet"              #contains face sample images, (created by sw)
 VIDEO_RECORD_DIR = "Records"         #recorded videos will be saved in this directory/folder (sw)
 DOC_FILE = "doc.txt"                 #file to save password (sw)
+DEFAULT_PASSWORD = "6251"            #Default password of this app
 TRAINED_FILE = "TrainData.yml"       #contains trained data, created after training (sw)
 ID_FILE = f"{PARENT_PATH}\\ids.txt"  #id and corresponding names will be saved in it (sw)
 
@@ -66,8 +67,8 @@ except OSError:                              #if error found/file found
 else:                                        #if not found at all                       
     """create necessary document folder for the first time"""
     document_file = open(f"{PARENT_PATH}\\{DOC_FILE}", 'w') #open in writing mode
-    document_file.write("6251")              #default password
-    document_file.close()                    #close to save
+    document_file.write(DEFAULT_PASSWORD")        #write default password
+    document_file.close()                         #close to save file
     f = open(f"{ID_FILE}", 'w')
     f.close()
     print("created") 
