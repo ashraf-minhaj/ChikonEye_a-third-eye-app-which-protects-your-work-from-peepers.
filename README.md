@@ -1,7 +1,7 @@
 # ChikonEye_a-third-eye-app-which-protects-your-work-from-peepers.
 Update (22nd May 2020):
 
-#Version 2.0.1 - Additional features added:
+# Version 2.0.1 - Additional features added
 1. Executable file 
 2. Video recording
 3. Face detection, recognition, model training
@@ -14,7 +14,7 @@ Please keep all the 3 files (1)ChikonEye2.exe (2)Icons (3)haarcascade_frontalfac
 Video guide: (updating soon)
 
 
-#Older version documentation
+# Older version documentation
 To do face recognition one has to run 3 different codes DataSet creator then Train the model then Recognizer code. I have written a single python script that will do all those 3 jobs by itself. SO you don't need to worry a bit. 
 
 Additional features like GUI and Auto Lock Screen have been added.
@@ -48,4 +48,4 @@ preventing others who peeps your computer from seeing your valuable secret works
 Now your works are safe and secure.
 
 delete the user.x.x image before using
-# Press 'q' to quit or stop the program
+#Press 'q' to quit or stop the program
